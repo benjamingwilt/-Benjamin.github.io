@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格界面</title>
+    <link rel="stylesheet" href="js/bstable/css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/bstable/css/bootstrap-table.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<main class="index-section">
+    <header class="table-head">
+        <p><label>日期：</label><input type="date" class="input-find"><label></label></p>
+        <div style="left: 40%; position: absolute; top:10%;font-weight:bold;font-size:25px; color: white;">轨迹图</div>
+    </header>
+    <section>
+        <div style="left: 85%; position: absolute; top:10%;font-weight:bold;font-size:25px; color: white;">实时路况</div>
+    </section>
+
+    <style type="text/css">
+    wrapper
+    { width:670px; height:350px; margin:100px 30px; overflow:hidden; position:relative; }
+    iframe { width:79%;height:768px; position:fixed; top:106px; left:10px; }
+  </style>
+
+    <div class="wrapper">
+     <iframe class="iframe" src="轨迹图.html" scrolling="no" frameborder="0">
+      </iframe>
+      </div>
+
+    <div class="video_01">
+        <div class="video_right" style="left:80%; position: absolute; top:16%; border:solid 3px white;">
+            <video autoplay="autoplay" loop="loop"  class="dataAllBorder02 video_cage" style="width: 100%;height: 490px">
+                <source class="video" src="video/实时路况.mp4"/>
+            </video>
+        </div>
+    </div>
+
+</main>
+</body>
+</html>
